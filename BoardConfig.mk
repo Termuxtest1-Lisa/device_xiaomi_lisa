@@ -41,3 +41,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Include proprietary files
 include vendor/xiaomi/lisa/BoardConfigVendor.mk
+
+# Firmware
+-include vendor/xiaomi/firmware-lisa/BoardConfigVendor.mk
