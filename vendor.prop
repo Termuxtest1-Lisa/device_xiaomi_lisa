@@ -1,3 +1,6 @@
 # Fingerprint
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_location=1080|960|200|local:4630946480857061762,1080|960|200|local:4630946622257352578
+
+# USB
+vendor.usb.product_string=Xiaomi 11 Lite 5G NE
