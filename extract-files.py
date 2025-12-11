@@ -64,6 +64,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open'),
     'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
         .add_needed('libjsoncpp_shim.so'),
+    (
+        'vendor/lib/libaudiocloudctrl.so',
+        'vendor/lib64/hw/camera.qcom.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 
