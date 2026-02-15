@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+COMMON_PATH := device/xiaomi/sm8350-common
+
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
@@ -26,6 +28,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rro_overlays/config-odm.xml:$(TARGET_COPY_OUT_ODM)/overlay/config/config.xml
+
+# Power
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/powerhint_lahaina.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
