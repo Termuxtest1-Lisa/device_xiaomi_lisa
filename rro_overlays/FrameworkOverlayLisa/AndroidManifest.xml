@@ -5,5 +5,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.overlay.lisa">
-    <overlay android:targetPackage="android" />
+    <overlay 
+        android:isStatic="true"
+        android:priority="200"
+        android:targetPackage="android" />
 </manifest>
