@@ -9,6 +9,9 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 # Inherit MiuiCamera Makefile
 $(call inherit-product, vendor/xiaomi/miuicamera-lisa/device.mk)
 
+# Inherit BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayLisa
